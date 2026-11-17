@@ -1,0 +1,15 @@
+
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Application/" />
+  <Folder Name="/src/Infrastructure/" />
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Integration/">
+    <Project Path="tests/Integration/Logistics.IntegrationTests.csproj" />
+  </Folder>
+  <Project Path="src/Api/Logistics.Api/Logistics.Api.csproj" />
+  <Project Path="src/Application/Logistics.Application.csproj" />
+  <Project Path="src/Domain/Logistics.Domain.csproj" />
+  <Project Path="src/Infrastructure/Logistics.Infrastructure.csproj" />
+  <Project Path="tests/Domain/Logistics.Tests.csproj" />
+</Solution>

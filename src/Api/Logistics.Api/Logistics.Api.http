@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:5069
+
+### Consultar mensajeros
+GET {{baseUrl}}/api/couriers
+
+### Consultar entregas
+GET {{baseUrl}}/api/deliveries
+
+### Asignar Carlos a la primera entrega
+POST {{baseUrl}}/api/deliveries/f7fb40fd-36d5-4b47-a6b4-7c5aa11353e8/assign
+Content-Type: application/json
+
+{
+  "courierId": "90565252-c0a7-4410-b3f6-4a9e91ad90d5"
+}

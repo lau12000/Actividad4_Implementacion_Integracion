@@ -1,0 +1,39 @@
+
+# Archivos generados por .NET
+**/bin/
+**/obj/
+
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Configuración local
+.env
+.env.*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos generados por .NET
+bin/
+obj/
+.vs/
+.idea/
+TestResults/
+
+# Bases de datos locales
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Archivos temporales
+*.user
+*.suo
