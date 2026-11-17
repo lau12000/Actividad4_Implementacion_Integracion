@@ -1,0 +1,30 @@
+
+name: Verificacion de calidad
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restaurar dependencias
+        run: dotnet restore Logistics.slnx
+
+      - name: Compilar solucion
+        run: dotnet build Logistics.slnx --no-restore
+
+      - name: Ejecutar pruebas
+        run: dotnet test Logistics.slnx --no-build --verbosity normal
