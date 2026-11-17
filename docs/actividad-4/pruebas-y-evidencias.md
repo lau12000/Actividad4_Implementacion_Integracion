@@ -108,20 +108,25 @@ Esto demuestra que la operación rechaza una asignación duplicada.
 
 **Estado general:** Todas las pruebas automatizadas finalizaron correctamente.
 
-## 7. Evidencias que se deben conservar
+## 7. Evidencias de ejecución
 
-Se recomienda incluir capturas de pantalla de los siguientes resultados:
+Las siguientes capturas se encuentran almacenadas en `docs/actividad-4/evidencias/`:
 
-1. Ejecución de `dotnet build Logistics.slnx` con compilación correcta.
-2. Ejecución de `dotnet test Logistics.slnx` con 12 pruebas correctas.
-3. Consulta GET de mensajeros.
-4. Consulta GET de entregas antes de la asignación.
-5. Solicitud POST de asignación exitosa.
-6. Consulta GET que muestra la entrega en estado Assigned.
-7. Intento de asignación duplicada con respuesta HTTP 409.
-8. Creación de la migración InitialCreate.
-9. Aplicación de la migración con `dotnet ef database update`.
-10. Consulta de migraciones aplicadas mediante `dotnet ef migrations list`.
+| Archivo | Evidencia |
+|---|---|
+| `01-compilacion-exitosa.png` | Compilación correcta de la solución. |
+| `02-pruebas-automatizadas.png` | Ejecución de las 12 pruebas automatizadas. |
+| `03-consulta-mensajeros.png` | Consulta de mensajeros registrados. |
+| `05-asignacion-exitosa.png` | Asignación exitosa de un mensajero. |
+| `06-entregas-actualizadas.png` | Consulta de entregas después de la asignación. |
+| `07-error-asignacion-duplicada-409.png` | Rechazo de una asignación duplicada mediante HTTP 409. |
+| `08-archivos-migracion.png` | Archivos generados por la migración InitialCreate. |
+| `09-aplicacion-migracion.png` | Verificación de aplicación de la migración. |
+| `10-listado-migraciones.png` | Listado de migraciones registradas. |
+
+**Nota:** No se conserva una captura independiente de la consulta inicial de entregas. El resultado de esa consulta quedó registrado durante la ejecución y se utilizó para realizar la asignación exitosa.
+
+Las evidencias corresponden a ejecuciones realizadas sobre el proyecto local.
 
 Las capturas deben corresponder a las ejecuciones reales del proyecto.
 
