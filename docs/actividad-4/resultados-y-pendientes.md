@@ -76,3 +76,21 @@ La Actividad 4 permitió pasar del diseño arquitectónico a una implementación
 Las pruebas realizadas permitieron comprobar tanto el funcionamiento de una asignación válida como el rechazo de una segunda asignación sobre una entrega que ya se encuentra asignada.
 
 La solución cuenta con una base funcional y verificable, además de una identificación de los riesgos y mejoras necesarias para continuar su evolución.
+
+## Verificación automática con GitHub Actions
+
+Se configuró un flujo de integración continua mediante GitHub Actions
+en el archivo `.github/workflows/dotnet.yml`.
+
+El flujo ejecuta automáticamente:
+- Restauración de dependencias.
+- Compilación de la solución.
+- Ejecución de pruebas automatizadas.
+
+Resultado de la ejecución:
+- Estado: Correcto.
+- Rama: main.
+- Commit: dabaa48.
+- Duración: 42 segundos.
+
+La ejecución finalizó satisfactoriamente, sin errores reportados.
